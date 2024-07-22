@@ -13,6 +13,12 @@
 		41E931142C4BE6CF004A20DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 41E931132C4BE6CF004A20DB /* Base */; };
 		41E931162C4BE6D3004A20DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E931152C4BE6D3004A20DB /* Assets.xcassets */; };
 		41E931192C4BE6D3004A20DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 41E931182C4BE6D3004A20DB /* Base */; };
+		41E931262C4BE78D004A20DB /* PrimeiraTelaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E931252C4BE78D004A20DB /* PrimeiraTelaView.swift */; };
+		41E931282C4BE7AF004A20DB /* SegundaTelaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E931272C4BE7AF004A20DB /* SegundaTelaView.swift */; };
+		41E9312A2C4BE7C4004A20DB /* TerceiraTelaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E931292C4BE7C4004A20DB /* TerceiraTelaView.swift */; };
+		41E9312C2C4BE815004A20DB /* PrimeiraTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9312B2C4BE815004A20DB /* PrimeiraTelaViewController.swift */; };
+		41E9312E2C4BE844004A20DB /* SegundaTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9312D2C4BE844004A20DB /* SegundaTelaViewController.swift */; };
+		41E931302C4BE85E004A20DB /* TerceiraTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9312F2C4BE85E004A20DB /* TerceiraTelaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		41E931152C4BE6D3004A20DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E931182C4BE6D3004A20DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E9311A2C4BE6D3004A20DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E931252C4BE78D004A20DB /* PrimeiraTelaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrimeiraTelaView.swift; path = TresTelasApp/Source/PrimeiraTela/PrimeiraTelaView.swift; sourceTree = SOURCE_ROOT; };
+		41E931272C4BE7AF004A20DB /* SegundaTelaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaTelaView.swift; sourceTree = "<group>"; };
+		41E931292C4BE7C4004A20DB /* TerceiraTelaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceiraTelaView.swift; sourceTree = "<group>"; };
+		41E9312B2C4BE815004A20DB /* PrimeiraTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTelaViewController.swift; sourceTree = "<group>"; };
+		41E9312D2C4BE844004A20DB /* SegundaTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaTelaViewController.swift; sourceTree = "<group>"; };
+		41E9312F2C4BE85E004A20DB /* TerceiraTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceiraTelaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		41E9310B2C4BE6CF004A20DB /* TresTelasApp */ = {
 			isa = PBXGroup;
 			children = (
+				41E931212C4BE70B004A20DB /* Source */,
+				41E931202C4BE6DE004A20DB /* Resource */,
+				41E9311A2C4BE6D3004A20DB /* Info.plist */,
+			);
+			path = TresTelasApp;
+			sourceTree = "<group>";
+		};
+		41E931202C4BE6DE004A20DB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				41E9310C2C4BE6CF004A20DB /* AppDelegate.swift */,
 				41E9310E2C4BE6CF004A20DB /* SceneDelegate.swift */,
 				41E931102C4BE6CF004A20DB /* ViewController.swift */,
 				41E931122C4BE6CF004A20DB /* Main.storyboard */,
 				41E931152C4BE6D3004A20DB /* Assets.xcassets */,
 				41E931172C4BE6D3004A20DB /* LaunchScreen.storyboard */,
-				41E9311A2C4BE6D3004A20DB /* Info.plist */,
 			);
-			path = TresTelasApp;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		41E931212C4BE70B004A20DB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				41E931242C4BE74C004A20DB /* TerceiraTela */,
+				41E931232C4BE740004A20DB /* SegundaTela */,
+				41E931222C4BE71B004A20DB /* PrimeiraTela */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		41E931222C4BE71B004A20DB /* PrimeiraTela */ = {
+			isa = PBXGroup;
+			children = (
+				41E931252C4BE78D004A20DB /* PrimeiraTelaView.swift */,
+				41E9312B2C4BE815004A20DB /* PrimeiraTelaViewController.swift */,
+			);
+			path = PrimeiraTela;
+			sourceTree = "<group>";
+		};
+		41E931232C4BE740004A20DB /* SegundaTela */ = {
+			isa = PBXGroup;
+			children = (
+				41E931272C4BE7AF004A20DB /* SegundaTelaView.swift */,
+				41E9312D2C4BE844004A20DB /* SegundaTelaViewController.swift */,
+			);
+			path = SegundaTela;
+			sourceTree = "<group>";
+		};
+		41E931242C4BE74C004A20DB /* TerceiraTela */ = {
+			isa = PBXGroup;
+			children = (
+				41E931292C4BE7C4004A20DB /* TerceiraTelaView.swift */,
+				41E9312F2C4BE85E004A20DB /* TerceiraTelaViewController.swift */,
+			);
+			path = TerceiraTela;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E931112C4BE6CF004A20DB /* ViewController.swift in Sources */,
+				41E9312A2C4BE7C4004A20DB /* TerceiraTelaView.swift in Sources */,
 				41E9310D2C4BE6CF004A20DB /* AppDelegate.swift in Sources */,
 				41E9310F2C4BE6CF004A20DB /* SceneDelegate.swift in Sources */,
+				41E931262C4BE78D004A20DB /* PrimeiraTelaView.swift in Sources */,
+				41E931282C4BE7AF004A20DB /* SegundaTelaView.swift in Sources */,
+				41E9312E2C4BE844004A20DB /* SegundaTelaViewController.swift in Sources */,
+				41E9312C2C4BE815004A20DB /* PrimeiraTelaViewController.swift in Sources */,
+				41E931302C4BE85E004A20DB /* TerceiraTelaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
